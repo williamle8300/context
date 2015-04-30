@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "/**   * i can do anything i want using npm!   * (but study how \"they\" do the anything)   * where infinite begins   */",
   "browser": "browser.js",
   "dependencies": {
     "beefy": "^2.1.5",
@@ -19,5 +19,14 @@
     "watch": "watchify browser.js -o static/bundle.js --debug --verbose"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "browser.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamle8300/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/williamle8300/test/issues"
+  },
+  "homepage": "https://github.com/williamle8300/test#readme"
 }
