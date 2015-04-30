@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "browser": "browser.js",
+  "dependencies": {
+    "beefy": "^2.1.5",
+    "browserify": "^9.0.8",
+    "ndarray-ops": "^1.2.2",
+    "ndgemm": "0.0.0",
+    "watchify": "^3.2.0",
+    "zeros": "0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "beefy browser.js:bundle.js --live true 3000",
+    "test": "tape test/*.js",
+    "build": "browserify browser.js -o static/bundle.js",
+    "watch": "watchify browser.js -o static/bundle.js --debug --verbose"
+  },
+  "author": "",
+  "license": "ISC"
+}
