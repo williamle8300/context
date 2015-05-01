@@ -4,14 +4,14 @@
   "description": "/**   * i can do anything i want using npm!   * (but study how \"they\" do the anything)   * where infinite begins   */",
   "browser": "browser.js",
   "dependencies": {
-    "beefy": "^2.1.5",
-    "browserify": "^9.0.8",
     "ndarray-ops": "^1.2.2",
     "ndgemm": "0.0.0",
-    "watchify": "^3.2.0",
     "zeros": "0.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "beefy": "^2.1.5",
+    "watchify": "^3.2.0"
+  },
   "scripts": {
     "start": "beefy browser.js:bundle.js --live true 3000",
     "test": "tape test/*.js",
