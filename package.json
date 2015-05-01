@@ -1,7 +1,7 @@
 {
-  "name": "test",
+  "name": "context",
   "version": "1.0.1",
-  "description": "testingmodule",
+  "description": "context",
   "dependencies": {
     "ndarray-ops": "^1.2.2",
     "ndgemm": "0.0.0",
@@ -35,10 +35,10 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/williamle8300/test.git"
+    "url": "git+https://github.com/williamle8300/context.git"
   },
   "bugs": {
-    "url": "https://github.com/williamle8300/test/issues"
+    "url": "https://github.com/williamle8300/context/issues"
   },
-  "homepage": "https://github.com/williamle8300/test#readme"
+  "homepage": "https://github.com/williamle8300/context#readme"
 }
