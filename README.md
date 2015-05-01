@@ -1,5 +1,5 @@
 # Distinguishing marks of a good module
-## A.K.A. "leanest thing under 200loc that actually works"
+## A.K.A. Unix's "leanest thing under 200loc that actually works"
 
 > I have to admit something... in the past, I used to evaluate packages by looking at the Github page to see when it was last updated. If I see something that is more recent, it gets my tick of approval.
 > Bad Chris!
@@ -12,7 +12,7 @@
 
 # substack drafts a new module
 
-- *write a lot pseudo-JS to grok the abstraction (added by me)*
+- *write a lot pseudoJS to "abstractify" the problem (added by me)*
 - substack codes as usual:
   - Uses console.dir alot to inspect & debug
   - Didn't TDD - creates an example.js that requires the module and tests its functionality
@@ -27,7 +27,13 @@
 
 # 1 + 2 = 3 philosophy and mathematics are agreed on this proof
 
-- PARAMETERS CODE 1/4 2 YEARS!!! TURTLES ALL THE WAY UP LOST
+## PARAMETERS CODE 1/4 2 YEARS!!! TURTLES ALL THE WAY UP LOST
+
+- abstract problem
+- know which npm module(s) to use
+- know which npm module(s) to write
+- solve problem
+
 - explore and get inspired; do a lot of online reading
 - design stuff
   -	think of cool, new things to make

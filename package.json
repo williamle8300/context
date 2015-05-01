@@ -1,26 +1,38 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "/**   * i can do anything i want using npm!   * (but study how \"they\" do the anything)   * where infinite begins   */",
-  "browser": "browser.js",
+  "description": "testingmodule",
   "dependencies": {
     "ndarray-ops": "^1.2.2",
     "ndgemm": "0.0.0",
+    "tap-spec": "^3.0.0",
     "zeros": "0.0.0"
   },
   "devDependencies": {
     "beefy": "^2.1.5",
+    "brfs": "^1.4.0",
+    "browserify": "^10.0.0",
+    "catw": "^1.0.0",
+    "less": "^2.5.0",
+    "tap": "^0.7.1",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0",
     "watchify": "^3.2.0"
   },
   "scripts": {
-    "start": "beefy browser.js:bundle.js --live true 3000",
-    "test": "tape test/*.js",
-    "build": "browserify browser.js -o static/bundle.js",
-    "watch": "watchify browser.js -o static/bundle.js --debug --verbose"
+    "dev":        "beefy index.js:bundle.js --live true 3000 -- -t brfs",
+    "dev-test":   "beefy test/index.js:bundle.js --live true 3000 ",
+    "watch":      "npm run watch-js & npm run watch-css",
+    "build":      "npm run build-js & npm run build-css",
+    "watch-js":   "watchify index.js -o static/bundle.js --debug --verbose",
+    "watch-css":  "catw -c 'lessc -' 'style/*.less' -o static/bundle.css -v",
+    "build-js":   "browserify index.js -o static/bundle.js",
+    "build-css":  "catw -c 'lessc -' 'style/*.less' > static/bundle.css",
+    "test":       "tape test/index.js | tap-spec"
   },
   "author": "",
   "license": "ISC",
-  "main": "browser.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/williamle8300/test.git"
