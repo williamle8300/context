@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "testingmodule",
   "dependencies": {
     "ndarray-ops": "^1.2.2",
@@ -20,15 +20,15 @@
     "watchify": "^3.2.0"
   },
   "scripts": {
-    "dev":        "beefy index.js:bundle.js --live true 3000 -- -t brfs",
-    "dev-test":   "beefy test/index.js:bundle.js --live true 3000 ",
-    "watch":      "npm run watch-js & npm run watch-css",
-    "build":      "npm run build-js & npm run build-css",
-    "watch-js":   "watchify index.js -o static/bundle.js --debug --verbose",
-    "watch-css":  "catw -c 'lessc -' 'style/*.less' -o static/bundle.css -v",
-    "build-js":   "browserify index.js -o static/bundle.js",
-    "build-css":  "catw -c 'lessc -' 'style/*.less' > static/bundle.css",
-    "test":       "tape test/index.js | tap-spec"
+    "dev": "beefy index.js:bundle.js --live true 3000 -- -t brfs",
+    "dev-test": "beefy test/index.js:bundle.js --live true 3000 ",
+    "watch": "npm run watch-js & npm run watch-css",
+    "build": "npm run build-js & npm run build-css",
+    "watch-js": "watchify index.js -o static/bundle.js --debug --verbose",
+    "watch-css": "catw -c 'lessc -' 'style/*.less' -o static/bundle.css -v",
+    "build-js": "browserify index.js -o static/bundle.js",
+    "build-css": "catw -c 'lessc -' 'style/*.less' > static/bundle.css",
+    "test": "tape test/index.js | tap-spec"
   },
   "author": "",
   "license": "ISC",
